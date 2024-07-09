@@ -21,6 +21,7 @@ class CarFactory extends Factory
             'manufacturing_year' => random_int(1960, 2022),
             'price' => round(random_int(2000, 20000) / 50) * 50,
             'mileage' => round(random_int(20000, 200000) / 500) * 500,
+            'sold' => $this->faker->boolean(),
         ];
     }
 }

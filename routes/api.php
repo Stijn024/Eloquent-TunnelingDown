@@ -10,6 +10,8 @@ Route::get('/user', function (Request $request) {
 })->middleware('auth:sanctum');
 
 Route::get('/cars', [CarController::class, 'index']);
+Route::get('/cars/cheap', [CarController::class, 'cheap']);
+Route::get('/cars/expensive', [CarController::class, 'expensive']);
 Route::get('/cars/{car}', [CarController::class, 'show']);
 Route::get('/brands', [BrandController::class, 'index']);
 Route::get('/brands/{brand}', [BrandController::class, 'show']);

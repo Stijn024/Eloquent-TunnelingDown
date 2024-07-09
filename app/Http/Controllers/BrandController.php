@@ -12,6 +12,7 @@ class BrandController extends Controller
     {
         return BrandResource::collection(Brand::all());
     }
+    
     public function show(Brand $brand)
     {
         return new BrandResource($brand);

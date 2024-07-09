@@ -12,8 +12,19 @@ class CarController extends Controller
     {
         return CarResource::collection(Car::all());
     }
+
     public function show(Car $car)
     {
         return new CarResource($car->load('brand'));
     }
+
+    public function cheap()
+    {
+        return CarResource::collection(Car::cheap()->get());
+    }
+    
+    public function expensive()
+    {
+        return CarResource::collection(Car::expensive()->get());
+    }    
 }

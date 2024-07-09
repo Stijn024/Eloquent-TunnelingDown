@@ -37,3 +37,11 @@ Please refer to the specific commits to see the progress and implementation deta
 - Implemented index routes for Cars and Brands wich return a collection of the Resource classes from the previous exercise.
 - Updated the resources so that they include their relations and that they are only included when eager loading is used.
 - The show methods show the related data, the index methods do not while still using the same resource.
+
+### Eloquent → 4.Tunneling down → 4.Scope creep
+
+- Updated the seeder so that 25 cars are added foreach brand.
+- Updated the migration: added sold column.
+- Updated CarFactory: asign random boolean for sold.
+- Created 2 routes cheap & expensive, added methods to Car & CarController
+- Added a global scope (AvailableScope.php) and add booted() method to Car.

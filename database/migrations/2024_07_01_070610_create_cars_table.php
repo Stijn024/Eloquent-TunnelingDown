@@ -18,6 +18,7 @@ return new class extends Migration
             $table->integer('manufacturing_year');
             $table->integer('price');
             $table->integer('mileage');
+            $table->boolean('sold');
             $table->timestamps();
         });
     }

@@ -32,7 +32,7 @@ class DatabaseSeeder extends Seeder
             ->state(new Sequence(
                 ['name' => $brand],
             ))
-            ->hasCars(5)
+            ->hasCars(25)
             ->create();
 
         }
