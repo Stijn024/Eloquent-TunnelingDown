@@ -17,6 +17,7 @@ class BrandResource extends JsonResource
         return [
             'id' => $this->id,
             'name' => $this->name,
+            'cars' => CarResource::collection($this->whenLoaded('cars')),
         ];
     }
 }

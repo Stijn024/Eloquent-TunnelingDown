@@ -31,3 +31,9 @@ Please refer to the specific commits to see the progress and implementation deta
 - Created API resources for Car and Brand so that the displayed data is the same as in the previous exercise.
 - The controllers return instances of your API resources.
 - Disable this data wrapping by updating AppServiceProvider.php
+
+### Eloquent → 4.Tunneling down → 3.Collecting resources
+
+- Implemented index routes for Cars and Brands wich return a collection of the Resource classes from the previous exercise.
+- Updated the resources so that they include their relations and that they are only included when eager loading is used.
+- The show methods show the related data, the index methods do not while still using the same resource.

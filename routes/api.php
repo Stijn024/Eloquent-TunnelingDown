@@ -9,5 +9,7 @@ Route::get('/user', function (Request $request) {
     return $request->user();
 })->middleware('auth:sanctum');
 
+Route::get('/cars', [CarController::class, 'index']);
 Route::get('/cars/{car}', [CarController::class, 'show']);
+Route::get('/brands', [BrandController::class, 'index']);
 Route::get('/brands/{brand}', [BrandController::class, 'show']);
