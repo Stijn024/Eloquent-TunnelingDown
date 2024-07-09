@@ -45,3 +45,7 @@ Please refer to the specific commits to see the progress and implementation deta
 - Updated CarFactory: asign random boolean for sold.
 - Created 2 routes cheap & expensive, added methods to Car & CarController
 - Added a global scope (AvailableScope.php) and add booted() method to Car.
+
+### Eloquent → 4.Tunneling down → 5.Transforming attributes
+
+- Added modelName-method to Car.
