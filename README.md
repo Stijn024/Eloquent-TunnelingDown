@@ -16,7 +16,7 @@
 The repository is structured with separate commits for each exercise in the Eloquent - Being relatable module. This allows you to review each stage of the module independently, making it easier to provide targeted feedback.
 Please refer to the specific commits to see the progress and implementation details for each of the four exercises.
 
-### Eloquent → 2.Tunneling down → 1.Why so serial?
+### Eloquent → 4.Tunneling down → 1.Why so serial?
 
 - Created a new Laravel project and installed API routes.
 - Created models, factories, and migrations: Car and Brand.
@@ -25,3 +25,9 @@ Please refer to the specific commits to see the progress and implementation deta
 - Seeded 5 Brands with realistic data.
 - Assigned 5 Cars to each Brand in the seeder.
 - Implemented show API routes for Car and Brand.
+  
+### Eloquent → 4.Tunneling down → 2.Getting resourceful
+
+- Created API resources for Car and Brand so that the displayed data is the same as in the previous exercise.
+- The controllers return instances of your API resources.
+- Disable this data wrapping by updating AppServiceProvider.php
